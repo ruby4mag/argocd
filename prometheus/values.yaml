@@ -776,17 +776,17 @@ serverFiles:
   rules: {}
 
   prometheus.yml:
-    groups:
-      - name: ResourceUsage
-        rules:
-          - alert: HighCPUUsage
-            expr: avg(rate(node_cpu_seconds_total{mode="user"}[5m])) > 0.08
-            for: 5m
-            labels:
-              severity: critical
-            annotations:
-              description: 'High CPU Usage detected'
-              summary: 'High CPU Usage detected'
+    #groups:
+    #  - name: ResourceUsage
+    #    rules:
+    #      - alert: HighCPUUsage
+    #        expr: avg(rate(node_cpu_seconds_total{mode="user"}[5m])) > 0.08
+    #        for: 5m
+    #        labels:
+    #          severity: critical
+    #        annotations:
+    #          description: 'High CPU Usage detected'
+    #          summary: 'High CPU Usage detected'
     rule_files:
       - /etc/config/recording_rules.yml
       - /etc/config/alerting_rules.yml
