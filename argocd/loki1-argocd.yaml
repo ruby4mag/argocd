@@ -11,8 +11,8 @@
      # repoURL: https://prometheus-community.github.io/helm-charts  # Official Helm stable repository URL (since the official Prometheus chart is part of the "prometheus-community")
      # chart: prometheus  # The name of the chart to deploy
      # targetRevision: 14.8.0  # Specific version of the chart (optional, can be set to 'latest' or omitted to use the latest version)
-       repoURL: https://github.com/ruby4mag/loki1
-       path: loki
+       repoURL: https://github.com/valentineezeja/argo-app
+       path: monitoring/charts
        targetRevision: HEAD
    project: default  # Argo CD project where this application belongs
    syncPolicy:

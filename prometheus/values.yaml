@@ -1287,7 +1287,7 @@ kube-state-metrics:
 prometheus-node-exporter:
   ## If false, node-exporter will not be installed
   ##
-  enabled: false
+  enabled: true
 
   rbac:
     pspEnabled: false
