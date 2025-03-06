@@ -310,8 +310,8 @@ server:
   ## Additional Prometheus server container arguments
   ## Set to null for argumentless flags
   ##
-  extraArgs: {}
-    # web.enable-remote-write-receiver: null
+  extraArgs: 
+    web.enable-remote-write-receiver: null
 
   ## Additional InitContainers to initialize the pod
   ##
